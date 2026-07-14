@@ -1,6 +1,6 @@
-# AI and Data Product Learning Portfolio
+# AI and Data Product Portfolio
 
-Hi! Welcome to my portfolio where I'm tracking my technical development and hands-on application of Python, machine learning, and AI product work.
+Hi, welcome! This is where I track my technical projects and application of python, machine learning, and AI product work.
 
 ## 🗂️ Contents
 
