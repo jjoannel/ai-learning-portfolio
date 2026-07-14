@@ -4,7 +4,7 @@ Hi, welcome! This is where I track my technical projects and application of pyth
 
 ## 🗂️ Contents
 
-* **[Python Fundamentals](./python-fundamentals/)**
+* **[Python Scripts](./python-scripts/)**
     *Automation scripts built to streamline data operations, clean messy datasets, and interface with external APIs
 * **[Machine Learning](./machine-learning/)**
     *End-to-end data analysis, predictive modeling, and performance evaluation metrics
