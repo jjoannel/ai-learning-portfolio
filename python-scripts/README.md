@@ -3,7 +3,7 @@ This folder contains Python scripts built to clean analytical datasets, interfac
 # 🫧 Data Cleaning Automated
 
 ## 1. Overview
-This script automates the ingestion and sanitization of raw, messy customer sign-up logs. It takes a corrupted, real-world style dataset (`raw_customer_data.csv`) and programmatically normalizes it into a production-ready file (`clean_customer_data.csv`).
+This is simulated retail sales data.
 
 ## 2. Key Challenges Solved
 * **Date Normalization:** Consolidated multiple date formats (e.g., `YYYY-MM-DD` and `MM/DD/YYYY`) into a single standardized datetime type.
