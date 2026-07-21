@@ -3,7 +3,7 @@
 ## Purpose
 
 This document defines every table, column, and business metric used
-throughout the Retail Sales Forecast project.
+throughout the Retail Sales project.
 
 ---
 
@@ -32,8 +32,6 @@ forecast feature engineering.
 | ISO_wk | INT | | ISO week, have exactly 7 days and start on a Monday|
 | ISO_yr | INT | | ISO year, always start on the first Monday closest to January 1 (starts anywhere between December 29 and January 4) |
 
----
-
 ## dim_product
 Contains descriptive information for retail products.
 
@@ -48,17 +46,8 @@ Contains descriptive information for retail products.
 | product_status | STRING | | Product status active or inactive|
 | list_price | DECIMAL | | Standard retail price |
 
----
-
 ## dim_store
-
-### Description
-
 Contains store attributes.
-
-### Primary Key
-
-store_id
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -73,17 +62,8 @@ store_id
 | sq_ft | INT | | Store square footage |
 | open_date | DATE | | Opening date |
 
----
-
 ## dim_promotion
-
-### Description
-
 Contains promotional campaigns.
-
-### Primary Key
-
-promo_id
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -96,17 +76,8 @@ promo_id
 | end_date | DATE | | Promotion end |
 | discount_code | STRING | | Coupon code |
 
----
-
 ## dim_service
-
-### Description
-
 Beauty services available at stores.
-
-### Primary Key
-
-service_id
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -118,7 +89,6 @@ service_id
 # Bridge Tables
 
 ## bridge_product_promotion
-
 Maps products to promotional campaigns.
 
 | Column | Type | Key | Description |
@@ -127,22 +97,16 @@ Maps products to promotional campaigns.
 | promo_id | FK | | Promotion |
 | value_of_offering | STRING | | Promotional offer description |
 
----
-
 ## bridge_product_component
-
 Maps products to ingredients/components.
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
 | product_id | FK | | Product |
-| component_id | FK | | Ingredient |
-| component_txt | STRING | | Ingredient description |
-
----
+| component_id | FK | | Component |
+| component_desc | STRING | | Component descriptions in product set |
 
 ## bridge_store_service
-
 Maps stores to available services.
 
 | Column | Type | Key | Description |
@@ -151,6 +115,7 @@ Maps stores to available services.
 | service_id | FK | | Service |
 | price | DECIMAL | | Service price |
 | effective_date | DATE | | Effective date |
+| end_date | DATE | | End date |
 
 ---
 
