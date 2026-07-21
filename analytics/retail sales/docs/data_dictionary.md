@@ -9,11 +9,9 @@ throughout the Retail Sales project.
 
 # Dimension Tables
 
----
-
 ## dim_calendar
 Contains calendar and fiscal date attributes used for reporting and
-forecast feature engineering.
+forecast feature engineering
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -33,7 +31,7 @@ forecast feature engineering.
 | ISO_yr | INT | | ISO year, always start on the first Monday closest to January 1 (starts anywhere between December 29 and January 4) |
 
 ## dim_product
-Contains descriptive information for retail products.
+Contains descriptive information for retail products
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -47,7 +45,7 @@ Contains descriptive information for retail products.
 | list_price | DECIMAL | | Standard retail price |
 
 ## dim_store
-Contains store attributes.
+Contains store attributes
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -63,7 +61,7 @@ Contains store attributes.
 | open_date | DATE | | Opening date |
 
 ## dim_promotion
-Contains promotional campaigns.
+Contains promotional campaigns
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -77,7 +75,7 @@ Contains promotional campaigns.
 | discount_code | STRING | | Coupon code |
 
 ## dim_service
-Beauty services available at stores.
+Containes beauty services available at stores
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -89,7 +87,7 @@ Beauty services available at stores.
 # Bridge Tables
 
 ## bridge_product_promotion
-Maps products to promotional campaigns.
+Maps products to promotional campaigns
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -98,7 +96,7 @@ Maps products to promotional campaigns.
 | value_of_offering | STRING | | Promotional offer description |
 
 ## bridge_product_component
-Maps products to ingredients/components.
+Maps products to ingredients/components
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -107,7 +105,7 @@ Maps products to ingredients/components.
 | component_desc | STRING | | Component descriptions in product set |
 
 ## bridge_store_service
-Maps stores to available services.
+Maps stores to available services
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -122,62 +120,26 @@ Maps stores to available services.
 # Fact Tables
 
 ## fact_store_sales
+Containes daily retail product sales
+One row represents one product sold at one store on one calendar day
 
-### Description
-
-Stores daily retail product sales.
-
-### Grain
-
-One row represents:
-
-One product
-
-sold
-
-at one store
-
-on one calendar day.
-
-### Foreign Keys
-
-date → dim_calendar
-
-store_id → dim_store
-
-product_id → dim_product
-
-promo_id → dim_promotion
-
-| Column | Type | Key | Description |
-|----------|------|-----|-------------|
-| date | DATE | FK | Sales date |
-| store_id | INT | FK | Selling store |
-| product_id | INT | FK | Product sold |
-| promo_id | INT | FK | Promotion applied |
-| units_sold | INT | | Quantity sold |
-| unit_price_at_sale | DECIMAL | | Selling price |
-| gross_sales | DECIMAL | | Before discounts |
-| discount_amount | DECIMAL | | Dollar discount |
-| net_revenue | DECIMAL | | Revenue after discounts |
+| Column | Type | Key | Key Description | Description |
+|----------|------|-----|-------------|-------------|
+| date | DATE | FK | date → dim_calendar | Sales date |
+| store_id | INT | FK | store_id → dim_store | Selling store |
+| product_id | INT | FK | product_id → dim_product | Product sold |
+| promo_id | INT | FK | promo_id → dim_promotion | Promotion applied |
+| units_sold | INT | | | Quantity sold |
+| unit_price_at_sale | DECIMAL | | | Selling price |
+| gross_sales | DECIMAL | | | Before discounts |
+| discount_amount | DECIMAL | | | Dollar discount |
+| net_revenue | DECIMAL | |  | Revenue after discounts |
 
 ---
 
 ## fact_service_sales
-
-### Description
-
-Stores completed service transactions.
-
-### Grain
-
-One service
-
-performed
-
-at one store
-
-on one calendar day.
+Containes service transactions sales
+One row represents one service performed at one store on one calendar day
 
 ### Foreign Keys
 
