@@ -34,3 +34,81 @@ AI Learning Portfolio
 │   └── Time Series
 │
 └── Product Management Case Studies
+
+
+## Featured Projects
+
+| Project | Description | Skills |
+|---------|-------------|--------|
+| 📈 Retail Sales Forecasting | End-to-end retail forecasting pipeline using synthetic sales data and machine learning. | Python, SQL, Pandas, Scikit-learn |
+| ❤️ Healthcare Demand Forecasting | Predict healthcare demand using time series models. | Python, Forecasting |
+| 🤖 Insurance Shopping Chatbot | AI product case study and prototype for health plan education. | Product Management, GenAI |
+
+---
+
+## Analytics Projects
+
+```
+analytics/
+├── retail-sales-forecast/
+├── customer-segmentation/
+├── pricing-optimization/
+└── marketing-attribution/
+```
+
+---
+
+## Machine Learning
+
+```
+learning/
+├── regression/
+├── classification/
+├── clustering/
+└── time-series/
+```
+
+---
+
+## Generative AI
+
+```
+projects/
+├── insurance-shopping-chatbot/
+├── ai-document-summarizer/
+└── prompt-engineering/
+```
+
+---
+
+## Python
+
+```
+learning/
+├── python-fundamentals/
+├── pandas/
+├── numpy/
+└── data-visualization/
+```
+
+---
+
+## Skills
+
+- Python
+- SQL
+- Pandas
+- NumPy
+- Scikit-learn
+- Time Series Forecasting
+- Data Modeling
+- Feature Engineering
+- Product Management
+- Generative AI
+
+---
+
+## Contact
+
+- LinkedIn
+- Portfolio Website
