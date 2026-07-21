@@ -4,13 +4,15 @@ Hi, welcome! This is where I track my technical projects and application of pyth
 
 ## 🗂️ Contents
 
-* **[Python Scripts](./python-scripts/)**
-    *Automation scripts built to streamline data operations, clean messy datasets, and interface with external APIs
+* **[Analytics](./analytics/)**
+    *Covers business analytic problems
 * **[Machine Learning](./machine-learning/)**
     *End-to-end data analysis, predictive modeling, and performance evaluation metrics
 * **[AI Product Case Studies](./ai-product-case-studies/)**
     *Deep dives into AI product architecture, business metrics, and strategy breakdowns
-
+* **[Notes](./learning/)**  
+    *Notes during my learning
+  
 ## 🛠️ Tech Stack
 * **Languages:** Python (Pandas, NumPy), SQL (PostgreSQL)
 * **Frameworks & Libraries:** Scikit-Learn, Requests (API handling)
