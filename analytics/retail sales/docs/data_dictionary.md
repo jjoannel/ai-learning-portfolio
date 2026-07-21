@@ -135,25 +135,17 @@ One row represents one product sold at one store on one calendar day
 | discount_amount | DECIMAL | | | Dollar discount |
 | net_revenue | DECIMAL | |  | Revenue after discounts |
 
----
-
 ## fact_service_sales
 Containes service transactions sales
 One row represents one service performed at one store on one calendar day
 
 ### Foreign Keys
 
-date → dim_calendar
-
-store_id → dim_store
-
-service_id → dim_service
-
-| Column | Type | Key | Description |
-|----------|------|-----|-------------|
-| date | DATE | FK | Service date |
-| store_id | INT | FK | Store |
-| service_id | INT | FK | Service |
+| Column | Type | Key | Key Description | Description |
+|----------|------|-----|-------------|-------------|
+| date | DATE | FK | date → dim_calendar | Service date |
+| store_id | INT | FK | store_id → dim_store | Store |
+| service_id | INT | FK | service_id → dim_service | Service |
 | service_count | INT | | Number of services completed |
 | unit_price_at_sale | DECIMAL | | Selling price |
 | gross_sales | DECIMAL | | Revenue before discounts |
@@ -163,51 +155,8 @@ service_id → dim_service
 ---
 
 # Business Definitions
-
-Revenue
-
-Amount collected after discounts.
-
-Gross Sales
-
-Units Sold × List Price
-
-Discount Amount
-
-Gross Sales − Net Revenue
-
-Sell Through
-
-Units Sold ÷ Available Inventory
-
-Door Tier
-
-Store sales classification.
-
----
-
-# Naming Conventions
-
-dim_
-
-Dimension tables
-
-fact_
-
-Fact tables
-
-bridge_
-
-Bridge tables
-
-_id
-
-Primary or foreign keys
-
-_pct
-
-Percentage
-
-_amt
-
-Dollar amount
+* Revenue: Amount collected after discounts
+* Gross Sales: Units Sold × List Price
+* Discount Amount: Gross Sales − Net Revenue
+* Sell Through: Units Sold ÷ Available Inventory
+* Door Tier: Store sales classification
