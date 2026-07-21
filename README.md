@@ -3,8 +3,20 @@
 Hi, welcome! This is where I track my technical projects and application of python, machine learning, and AI product work.
 
 ## 🗂️ Contents
-
-* **[Analytics](./analytics/)**
+```
+├── **[Analytics](./analytics/)**
+│   ├── Retail Sales Forecasting
+│   ├── Customer Segmentation
+│   └── Pricing Optimization
+│
+├── Machine Learning
+│   ├── Regression
+│   ├── Classification
+│   └── Time Series
+│
+└── Product Management Case Studies
+```
+* 
     *Covers business analytic problems
 * **[Machine Learning](./machine-learning/)**
     *End-to-end data analysis, predictive modeling, and performance evaluation metrics
@@ -21,21 +33,6 @@ Hi, welcome! This is where I track my technical projects and application of pyth
     *Pipeline optimization
     *Business metrics
 
-AI Learning Portfolio
-
-├── Analytics
-│   ├── Retail Sales Forecasting
-│   ├── Customer Segmentation
-│   └── Pricing Optimization
-│
-├── Machine Learning
-│   ├── Regression
-│   ├── Classification
-│   └── Time Series
-│
-└── Product Management Case Studies
-
-
 ## Featured Projects
 
 | Project | Description | Skills |
@@ -43,53 +40,6 @@ AI Learning Portfolio
 | 📈 Retail Sales Forecasting | End-to-end retail forecasting pipeline using synthetic sales data and machine learning. | Python, SQL, Pandas, Scikit-learn |
 | ❤️ Healthcare Demand Forecasting | Predict healthcare demand using time series models. | Python, Forecasting |
 | 🤖 Insurance Shopping Chatbot | AI product case study and prototype for health plan education. | Product Management, GenAI |
-
----
-
-## Analytics Projects
-
-```
-analytics/
-├── retail-sales-forecast/
-├── customer-segmentation/
-├── pricing-optimization/
-└── marketing-attribution/
-```
-
----
-
-## Machine Learning
-
-```
-learning/
-├── regression/
-├── classification/
-├── clustering/
-└── time-series/
-```
-
----
-
-## Generative AI
-
-```
-projects/
-├── insurance-shopping-chatbot/
-├── ai-document-summarizer/
-└── prompt-engineering/
-```
-
----
-
-## Python
-
-```
-learning/
-├── python-fundamentals/
-├── pandas/
-├── numpy/
-└── data-visualization/
-```
 
 ---
 
