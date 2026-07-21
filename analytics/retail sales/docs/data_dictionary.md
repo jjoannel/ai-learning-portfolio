@@ -12,15 +12,8 @@ throughout the Retail Sales Forecast project.
 ---
 
 ## dim_calendar
-
-### Description
-
 Contains calendar and fiscal date attributes used for reporting and
 forecast feature engineering.
-
-### Primary Key
-
-date
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
@@ -42,14 +35,7 @@ date
 ---
 
 ## dim_product
-
-### Description
-
 Contains descriptive information for retail products.
-
-### Primary Key
-
-product_id
 
 | Column | Type | Key | Description |
 |----------|------|-----|-------------|
