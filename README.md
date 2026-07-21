@@ -20,3 +20,17 @@ Hi, welcome! This is where I track my technical projects and application of pyth
     *Automated data validation
     *Pipeline optimization
     *Business metrics
+
+AI Learning Portfolio
+
+├── Analytics
+│   ├── Retail Sales Forecasting
+│   ├── Customer Segmentation
+│   └── Pricing Optimization
+│
+├── Machine Learning
+│   ├── Regression
+│   ├── Classification
+│   └── Time Series
+│
+└── Product Management Case Studies
