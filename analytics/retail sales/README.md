@@ -146,6 +146,12 @@ Fact Tables
 
 (Insert ER Diagram Here)
 
+## Data Simulations and Assumptions
+* Simulation for Door Tier
+1) Each store gets randomly labeled Flagship, A, B, or C
+2) Based on that label, the store is told how big it is (Flagship = large sqft)
+3) Based on that same label, the store is told how much it sells (Flagship = sells more) The demand multiplier is: Flagship sells 3.2x, A sells 1.8x, B	sells 1.0x (baseline), C	sells 0.55x
+
 ---
 
 ## Machine Learning Workflow
