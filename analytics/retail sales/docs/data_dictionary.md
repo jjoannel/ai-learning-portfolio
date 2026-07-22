@@ -1,6 +1,6 @@
 # Data Dictionary
 This document defines every table, column, and business metric used
-throughout the Retail Sales project.
+in the Retail Sales project.
 
 ---
 
