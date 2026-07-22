@@ -68,60 +68,33 @@ This project predicts future daily product sales across multiple retail stores.
 ## Project Structure
 
 retail-sales-forecast/
-
 ├── README.md
-
 ├── docs/
-
 │   ├── data_dictionary.md
-
 │   ├── data_model.md
-
 │   ├── business_rules.md
-
 ├── data/
-
-│   ├── raw/
-
-│   ├── processed/
-
-│   └── external/
-
 ├── notebooks/
-
 │   ├── 01_generate_dimension_tables.ipynb
-
 │   ├── 02_generate_fact_tables.ipynb
-
 │   ├── 03_data_validation.ipynb
-
 │   ├── 04_exploratory_analysis.ipynb
-
 │   ├── 05_feature_engineering.ipynb
-
 │   ├── 06_model_training.ipynb
-
 │   └── 07_model_evaluation.ipynb
-
 ├── src/
-
 │   ├── config.py
-
 │   ├── validation.py
-
 │   ├── preprocessing.py
-
 │   ├── feature_engineering.py
-
 │   ├── forecasting.py
-
 │   └── utils.py
-
 └── requirements.txt
 
 ---
 
 ## Data Model
+[Data Dictionary](./docs/data_dictionary.md)
 
 The project uses a star schema consisting of:
 
