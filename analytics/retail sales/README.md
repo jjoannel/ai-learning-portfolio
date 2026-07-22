@@ -66,7 +66,7 @@ This project predicts future daily product sales across multiple retail stores.
 ---
 
 ## Project Structure
-
+```
 retail-sales-forecast/
 ├── README.md
 ├── docs/
@@ -90,7 +90,7 @@ retail-sales-forecast/
 │   ├── forecasting.py
 │   └── utils.py
 └── requirements.txt
-
+```
 ---
 
 ## Data Model
