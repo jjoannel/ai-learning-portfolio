@@ -1,7 +1,4 @@
 # Data Model and Architectural Decisions
-
-## Purpose
-
 This document captures the key architectural and modeling decisions made during the design of the **Retail Sales Forecast** project. It explains *why* certain approaches were chosen and documents the trade-offs considered throughout development.
 
 ---
