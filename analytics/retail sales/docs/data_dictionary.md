@@ -159,7 +159,7 @@ One row represents one service performed at one store on one calendar day
 * Net Sales: Gross Sales - Discounts - Sales Return - Allowances
   * Currently this dataset does not have sales return or allowances
 * Door Tier: is an independent attribute of the store size (Flagship: 900-1400, A: 500-900, B: 250-500, C: 100-250  sqft), it drives sales performance in the simulation (via a demand multiplier), it isn't derived from sales results, foot traffic, or any other prior information
-  * More details are in the Assumptions.md
+  * More details in the README.md
 
 # Future Business Definitions
 * Sell Through: Units Sold ÷ Beginning Inventory
