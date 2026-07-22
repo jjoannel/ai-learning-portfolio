@@ -147,6 +147,7 @@ Fact Tables
 (Insert ER Diagram Here)
 
 ## Data Simulations and Assumptions
+
 * Simulation for Door Tier
 1) Each store gets randomly labeled Flagship, A, B, or C
 2) Based on that label, the store is told how big it is (Flagship = large sqft)
