@@ -1,7 +1,4 @@
 # Data Dictionary
-
-## Purpose
-
 This document defines every table, column, and business metric used
 throughout the Retail Sales project.
 
