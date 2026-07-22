@@ -94,12 +94,12 @@ retail-sales-forecast/
 ---
 
 ## Data Model
-[Data Dictionary](./docs/data_dictionary.md)
+* [Data Dictionary](./docs/data_dictionary.md)
+* [Data Model Decisions](./docs/data_model_decisions.md)
 
 The project uses a star schema consisting of:
 
 Dimension Tables
-
 - dim_calendar
 - dim_product
 - dim_store
@@ -107,13 +107,11 @@ Dimension Tables
 - dim_service
 
 Bridge Tables
-
 - bridge_product_promotion
 - bridge_product_component
 - bridge_store_service
 
 Fact Tables
-
 - fact_store_sales
 - fact_service_sales
 
