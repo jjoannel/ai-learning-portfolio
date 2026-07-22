@@ -155,8 +155,15 @@ One row represents one service performed at one store on one calendar day
 ---
 
 # Business Definitions
-* Revenue: Amount collected after discounts
 * Gross Sales: Units Sold × List Price
-* Discount Amount: Gross Sales − Net Revenue
-* Sell Through: Units Sold ÷ Available Inventory
-* Door Tier: Store sales classification
+  * Gross sales only includes revenue from direct sale of goods or services before any deductions
+* Discount Amount: Gross Sales x Discount percentage
+  * Sale price can be calculated Gross Sales - (Gross Sales - Discount percentage)
+* Net Sales: Gross Sales - Discounts - Sales Return - Allowances
+  * Currently this dataset does not have sales return or allowances
+* Door Tier: is an independent attribute of the store size (Flagship: 900-1400, A: 500-900, B: 250-500, C: 100-250  sqft), it drives sales performance in the simulation (via a demand multiplier), it isn't derived from sales results, foot traffic, or any other prior information
+  * More details care in the Assumptions.md
+
+# Future Business Definitions
+* Sell Through: Units Sold ÷ Beginning Inventory
+  * Beginning Inventory is a snapshot period in time, it can be taken at the beginining of the fiscal day, month, quarter, 
